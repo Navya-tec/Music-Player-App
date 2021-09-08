@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+
+    <link rel="stylesheet" href="./icons/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <div class="player">
+        <audio id="music-player"></audio>
+
+        <!-- song details -->
+        <div class="song-details">
+          <h2 id="song-title">Forget me too ft. Halsey</h2>
+          <h3 id="song-artist">Machine Gun Kelly</h3>
+          <br />
+        </div>
+        <br />
+        <!-- image -->
+        <div
+          id="song-img"
+          class="song-img anime"
+          style="background-image: url('images/music.jpeg')"
+        ></div>
+
+        <!-- progress -->
+        <div class="progressbar_container">
+          <div class="progress_duration">
+            <!-- <div id="current_time">0.00</div> -->
+            <div id="duration"></div>
+          </div>
+          <div class="progress_div" id="#progress_div">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <!-- controls -->
+        <div class="player-controls">
+          <button id="prev-btn" class="skip-btn fa-lg">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="play-btn">
+            <i id="play-icon" class="fas fa-play fa-2x"></i>
+          </button>
+          <button id="next-btn" class="skip-btn fa-lg">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+        <div class="next-up">
+          <p>
+            Next up:
+            <span id="song-next-up">Kindest Regards by Witt Lowry</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
